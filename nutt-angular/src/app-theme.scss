@@ -5,11 +5,13 @@
 
 $nutt-primary: mat.define-palette($primary);
 $nutt-accent: mat.define-palette($secondary);
+$nutt-warn: mat.define-palette($warn);
 
 $nutt-theme: mat.define-light-theme((
   color: (
     primary: $nutt-primary,
     accent: $nutt-accent,
+    warn: $nutt-warn
   )
 ));
 
