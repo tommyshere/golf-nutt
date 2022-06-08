@@ -1,0 +1,25 @@
+<table mat-table [dataSource]="tableData">
+  <!-- Player Name Column -->
+  <ng-container matColumnDef="golferName">
+    <th mat-header-cell *matHeaderCellDef>Golfer Name</th>
+    <td mat-cell *matCellDef="let data">{{ data.golferName }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="golferScore">
+    <th mat-header-cell *matHeaderCellDef>Golfer Score</th>
+    <td mat-cell *matCellDef="let data">{{ data.golferScore }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="playerGuess">
+    <th mat-header-cell *matHeaderCellDef>Guess</th>
+    <td mat-cell *matCellDef="let data">{{ data.playerGuess }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="playerScore">
+    <th mat-header-cell *matHeaderCellDef>Score</th>
+    <td mat-cell *matCellDef="let data">{{ data.playerScore }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

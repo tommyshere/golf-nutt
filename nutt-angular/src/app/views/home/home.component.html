@@ -1,0 +1,36 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-12">
+        <mat-tab-group mat-align-tabs="center">
+          <mat-tab label="Leaderboard">
+            <ng-template matTabContent>
+              <app-leaderboard></app-leaderboard>
+            </ng-template>
+          </mat-tab>
+          <!--          Technically should pull all the days from API -->
+          <mat-tab label="Sunday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Saturday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Friday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Thursday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>

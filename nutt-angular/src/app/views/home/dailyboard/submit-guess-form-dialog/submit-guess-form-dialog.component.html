@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Submit Your Guess</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="row">
+    <div class="col-xl-12">
+      <form *ngIf="userGuessForm" [formGroup]="userGuessForm">
+        <div formArrayName="guesses">
+          <div
+            class="row"
+            *ngFor="let guess of guessFormArr.controls; let i = index"
+            [formGroupName]="i">
+            <div class="col-xl-6">{{ guess.value.golferName }}</div>
+            <div class="col-xl-6">
+              <input type="number" formControlName="playerGuess" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+</mat-dialog-content>
