@@ -1,4 +1,4 @@
-$light-gray:	#717171;
+$light-gray: #717171;
 $off-white-gray: #f1f1f1;
 $border-gray: #c9c9c9;
 
@@ -35,21 +35,21 @@ $primary: (
   )
 );
 
-$accent: (
-  50 : #fffaed,
-  100 : #fff2d1,
-  200 : #ffe9b2,
-  300 : #ffe093,
-  400 : #ffda7c,
-  500 : #ffd365,
-  600 : #ffce5d,
-  700 : #ffc853,
-  800 : #ffc249,
-  900 : #ffb737,
+$secondary: (
+  50 : #fffae8,
+  100 : #fff4c5,
+  200 : #ffec9e,
+  300 : #ffe477,
+  400 : #ffdf5a,
+  500 : #ffd93d,
+  600 : #ffd537,
+  700 : #ffcf2f,
+  800 : #ffca27,
+  900 : #ffc01a,
   A100 : #ffffff,
-  A200 : #ffffff,
-  A400 : #fff4e1,
-  A700 : #ffeac8,
+  A200 : #fffffe,
+  A400 : #fff0cb,
+  A700 : #ffe8b2,
   contrast: (
     50 : #000000,
     100 : #000000,
