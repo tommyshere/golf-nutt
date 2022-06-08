@@ -44,3 +44,5 @@ Thumbs.db
 /nutt-api/.idea/
 /nutt-api/node_modules/
 !/nutt-angular/
+**/.angular/cache
+/nutt-angular/.angular/cache/
