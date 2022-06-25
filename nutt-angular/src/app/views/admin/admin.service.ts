@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Game } from '../../interface';
 import { of, Observable } from 'rxjs';
-import { game } from './data';
+import { games } from './data';
 
 @Injectable()
 export class AdminService {
   constructor() {}
 
-  public getGame(): Observable<Game> {
-    return of(game);
+  public getGames(): Observable<Game[]> {
+    return of(games);
   }
 }
