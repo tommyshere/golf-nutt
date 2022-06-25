@@ -10,13 +10,13 @@ import { Game } from '../../interface';
 })
 export class AdminComponent implements OnInit {
   private _rx!: Subscription;
-  public games!: Game[];
+  public game!: Game;
 
   constructor(private adminService: AdminService) {}
 
   ngOnInit(): void {
     this._rx = this.adminService.getGames().subscribe(data => {
-      this.games = data;
+      this.game = data[0];
     });
   }
 }
