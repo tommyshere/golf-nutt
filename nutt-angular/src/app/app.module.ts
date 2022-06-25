@@ -10,6 +10,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HomeModule } from './views/home/home.module';
 import { AuthInterceptor } from './core/auth.interceptor';
 import { UserModule } from './views/user/user.module';
+import { AdminModule } from './views/admin/admin.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { UserModule } from './views/user/user.module';
     SharedModule,
     HomeModule,
     UserModule,
+    AdminModule,
   ],
   providers: [
     {
