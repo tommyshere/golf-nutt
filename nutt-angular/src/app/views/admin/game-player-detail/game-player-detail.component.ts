@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AdminUserDetail } from '../../../interface';
 
 @Component({
   selector: 'app-game-player-detail',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-player-detail.component.scss'],
 })
 export class GamePlayerDetailComponent implements OnInit {
+  @Input() playerAdminDetails!: AdminUserDetail[];
+  public displayedColumns: string[] = ['name', 'paid'];
+
   constructor() {}
 
   ngOnInit(): void {}
